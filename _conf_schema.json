@@ -1,0 +1,26 @@
+{
+  "enable_hourly_broadcast": {
+    "type": "bool",
+    "description": "整点播报开关",
+    "default": true,
+    "hint": "开启后，每小时整点会从本群全体成员中随机抽取一人并播报必中结果；关闭后，所有群的自动整点播报都会停止。此开关是全局总开关。"
+  },
+  "enable_quiet_hours": {
+    "type": "bool",
+    "description": "启用免打扰时段",
+    "default": true,
+    "hint": "开启后，免打扰时段内会跳过整点随机播报和每日鼻屎王播报。默认开启，00:00（24点）至次日 08:00 不发送自动播报。"
+  },
+  "quiet_start": {
+    "type": "string",
+    "description": "免打扰开始时间",
+    "default": "00:00",
+    "hint": "24 小时制 HH:MM；默认 00:00（即 24:00，午夜）。"
+  },
+  "quiet_end": {
+    "type": "string",
+    "description": "免打扰结束时间",
+    "default": "08:00",
+    "hint": "24 小时制 HH:MM，例如 08:00。"
+  }
+}
